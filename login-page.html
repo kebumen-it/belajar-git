@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col lg:flex lg:flex-col">
+    <header class="fixed w-full h-14 z-50 bg-white shadow-lg">
+        <nav class="h-14 w-full absolute z-50">
+            <div class="flex items-center w-full h-14 px-3">
+                <h1 class="flex items-center text-xl font-normal">
+                    <img src="image2.png" class="w-10 mr-2">alem<span class="font-bold">help</span>
+                </h1>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mt-14 w-full h-screen flex flex-col-reverse items-center justify-end lg:flex lg:flex-row">
+        <section class="w-full h-4/5 mt-72 flex flex-col py-5 px-3 items-center justify-center bg-white rounded-t-3xl lg:w-2/4 lg:rounded-none lg:h-screen lg:mt-0 lg:p-14 lg:items-center">
+            <div class="flex flex-col items-center w-full lg:items-start lg:pl-5">
+                <h1 class="text-3xl font-bold mb-3">We've Missed You</h1>
+                <p class="text-xl font-normal">More than 150 questions are waiting for</p>
+                <p class="text-xl font-normal">your suggestions!</p>
+            </div>
+
+            <form class="w-full flex flex-col gap-3 mt-5 lg:items-start lg:w-full lg:pl-5">
+                <input type="text" id="username" name="username" placeholder="username" class="shadow-lg bg-white text-center placeholder:text-grey text-xl p-1 py-2 lg:text-start lg:w-4/5 lg:pl-5 lg:border">
+                <input type="password" id="password" name="password" placeholder="password" class="shadow-lg bg-white text-center placeholder:text-grey text-xl p-1 py-2 lg:text-start lg:w-4/5 lg:pl-5 lg:border">
+            </form>
+
+            <button class="flex flex-col items-center gap-3 mt-5 w-full lg:mt-10 lg:w-full lg:items-start lg:pl-5">
+                <div class="w-4/5 flex items-center justify-center rounded-md py-2 text-2xl text-white font-bold bg-orange-400">Login</div>
+                <div class="w-4/5 flex items-center justify-center rounded-md py-2 text-2xl text-white font-bold bg-orange-400">Register</div>
+            </button>
+        </section>
+
+        <figure class="absolute -z-20 lg:static lg:h-screen lg:w-full">
+            <img src="image.jpeg" class="h-screen">
+        </figure>
+    </main>
+</body>
+
+</html>
